@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Weather Forecast</h1>
+    </div>
+
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn">Search</button>
+        </div>
+        
+        <div class="bg-video">
+            <video src="./assets/video.mp4" autoplay muted loop></video>
+        </div>
+
+        <div id="weather-info" class="weather-info hide">
+            <h2 id="city-name">City, Country</h2>
+            <div class="weather-details">
+
+                <div class="weather-box">
+                    <h3>Temperature</h3>
+                    <p id="temperature">--°C</p>
+                    <div class="video-container">
+                        <video id="temperatureVideo" autoplay muted loop></video>
+                    </div>
+                </div>
+                
+                <div class="weather-box">
+                    <h3>Weather</h3>
+                    <p id="weather-description">--</p>
+                    <div class="video-container">
+                        <video id="weatherVideo" autoplay muted loop></video>
+                    </div>
+                </div>
+
+                <div class="weather-box">
+                    <h3>Humidity</h3>
+                    <p id="humidity">--%</p>
+                    <div class="video-container">
+                        <video id="humidityVideo" autoplay muted loop></video>
+                    </div>
+                </div>
+
+                <div class="weather-box">
+                    <h3>Wind Speed</h3>
+                    <p id="wind-speed">-- m/s</p>
+                    <div class="video-container">
+                        <video id="windVideo" autoplay muted loop></video>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
